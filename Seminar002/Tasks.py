@@ -89,6 +89,15 @@
 
 #25. Найти сумму чисел от 1 до А
 
+# def SumNum(a):
+#     res = 0
+#     for i in range(1, a+1):      
+#         res += i               
+#         i += 1              
+#     return res
+
+# A = int(input('Введите число a = '))
+# print(SumNum(A))    
 
 
 #26. Возведите число А в натуральную степень B используя цикл
@@ -103,14 +112,60 @@
 #27. Определить количество цифр в числе
 
 
+# def CollSymbol(a):
+#     col = 0
+#     while a > 0:
+#         a = a // 10
+#         col += 1
+#     return col 
 
-#28. Подсчитать сумму цифр в числе
+# a = int(input('Введите любое число = '))    
+# print(CollSymbol(a))
+
+
+
+
+# 28. Подсчитать сумму цифр в числе
+
+# def SumNum(num):
+#     num1 = str(num)
+#     res = 0
+#     for i in num1:
+#         res += int(i)
+#     return res
+
+
+# a = input('Введите число = ')    
+# print(SumNum(a))
+# print(f'Число {a} в сумме = {SumNum(a)}')
+      
 
 
  
 
 #29. Написать программу вычисления произведения чисел от 1 до N
 
+# def ProductNum(N):
+#     res = 1
+#     for i in range(1, N+1):
+#         res *= i 
+#         i += 1
+#     return res
+# A = int(input('Введите число = '))
+# print(ProductNum(A))
 
- 
+  
 #30. Показать кубы чисел, заканчивающихся на четную цифру 
+
+
+# def CubeNumber(x):
+#     for i in range(1, x+1):
+#         if i % 2 == 0:
+#             res = i**3
+#             print(f'{res}')
+
+# a = int(input('Введите число = '))        
+# CubeNumber(a)    
+
+
+
