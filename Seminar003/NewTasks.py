@@ -151,6 +151,17 @@
 #39. Реализовать алгоритм задания случайных чисел. 
 # Без использования встроенного генератора псевдослучайных чисел
 
+# def randomNumber(N):
+#     list = []
+#     list2 = []
+#     for i in range(-N, N+1):
+#         list.append(i)
+#     for j in list:
+#         k = (j**2 - 4*j - 3*j)
+#         list2.append(j+k)
+#     return list2
+       
+# print(randomNumber(5))
 
 
 #40. Определить, присутствует ли в заданном списке строк, некоторое число 
@@ -337,11 +348,68 @@
 # Математикой
 # Используя дополнительные библиотеки*
 
+# def quadEquation(a, b, c): 
+#     if a != 0 and b!= 0 and c!= 0: 
+#         D = b**2 - 4 * a * c 
+#         print(D) 
+#         if D < 0: print('Уравнение не имеет корней') 
+#         elif D == 0: 
+#             x = -b/(2*a) 
+#             print(f'x = {x}') 
+#         else: 
+#             x1 = (-b + D**0.5)/(2*a) 
+#             x2 = (-b - D**0.5)/(2*a) 
+#             print(f'x1 = {x1}, x2 = {x2}') 
+#     elif a != 0 and b == 0 and c == 0: 
+#         print('x = 0') 
+#     elif a != 0 and b == 0 and c != 0: 
+#         temp = - c / a 
+#         if temp < 0: 
+#             print('Уравнение не имеет корней') 
+#         elif temp > 0: 
+#             x1 = (-c / a)**0.5 
+#             x2 = -(-c / a)**0.5 
+#             print(f'x1 = {x1}, x2 = {x2}')    
+#     elif a == 0 and b != 0: 
+#         x = -c / b 
+#         print(f'x = {x}') 
+     
+ 
+        
+# num1 = 0 
+# num2 = 2 
+# num3 = -3 
+ 
+# quadEquation(num1, num2, num3)
 
+# import math
 
-#49. Найти НОК двух чисел
+# print("Введите коэффициенты для уровнения")
+# print("ax^2 + bx + c = 0:")
+# a =  float(input("a = "))
+# b =  float(input("b = "))
+# c =  float(input("c = "))
 
+# discr = b**2 - 4 * a * c
+# print("Дискримант D = %.2f" % discr)
 
+# if discr > 0:
+#     x1 = (-b + math.sqrt(discr)) / (2*a)
+#     x2 = (-b - math.sqrt(discr)) / (2*a)
+#     print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
+# elif discr == 0:
+#     x = -b / (2*a)
+#     print("x = %.2f" % x)
+# else:
+#     print("Корней нет")
+
+#49. Найти НОК двух чисел ???????????
+
+# a = 12
+# b = 49
+
+# nok = list((a, b, x) for x in range(1, lambda a, b, x: (a*b) + 1) if (x % a == 0) and (x % b == 0))
+# print(nok)
 
 #50. Вычислить число  c заданной точностью d
 # 	Пример: при d = 0.001, π = 3.141. 10-1≤d≤10-10
